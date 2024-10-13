@@ -1,0 +1,20 @@
+server:
+  port: 10001
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/app?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+
+  mybatis-plus:
+    type-aliases-package: com.app.entity
+    mapper-locations: classpath*:/mapper/**Mapper.xml
+
+
+
+
+
